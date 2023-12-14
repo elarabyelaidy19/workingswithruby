@@ -1,24 +1,3 @@
-# Backup Tool 
+# Workins With Ruby Cores 
 
-``` 
-backup_tool/
-│
-├── lib/
-│   ├── backup.rb               # Core logic for backup operations
-│   ├── compression.rb          # Compression-related functions (if implemented)
-│   ├── scheduler.rb            # Scheduling functions (if implemented)
-│   └── logger.rb               # Logging functions
-│
-├── bin/
-│   └── file_backup_script.rb   # Command-line interface script
-│
-├── config/
-│   └── config.yaml             # Configuration file for storing user settings
-│
-├── backups/                     # Default directory for storing backups
-│
-├── logs  
-|   └──  backup_log.txt
-└── README.md                   # Project documentation
-
-```
+The "RubyCorePractice" repository is my practical workspace where I apply Ruby core concepts to real-world scenarios. Through a series of projects, ranging from web applications to command-line tools, I showcase my ability to leverage Ruby's standard library in solving tangible problems. This repository serves as a dynamic portfolio, highlighting my hands-on experience and proficiency in translating theoretical knowledge into practical, functional solutions within the realm of Ruby programming
