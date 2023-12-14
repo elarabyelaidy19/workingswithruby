@@ -1,0 +1,3 @@
+source: '../backup/source'
+destination: '../backup/destination'
+interval: '2s'

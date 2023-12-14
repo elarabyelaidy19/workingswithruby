@@ -13,7 +13,6 @@ module Backup
             next unless File.file?(f) 
 
             relative_path = f.gsub("#{source}/", "") 
-            destination_path = "#{destination}/#{relative_path}" 
             backup_file = File.join(destination, relative_path)
             backup_single_file(f, backup_file)
         end 
