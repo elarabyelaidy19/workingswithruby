@@ -14,9 +14,7 @@ The Backup Tool is a command-line utility written in Ruby for automating file ba
 ``` 
 backup_tool/
 │
-├── backups/
-│   ├── backups_log.txt
-│
+|
 ├── bin/
 │   ├── backup_script.rb
 │
@@ -28,6 +26,9 @@ backup_tool/
 │   ├── compression.rb
 │   ├── logger.rb
 │   ├── scheduler.rb
+│
+├── logs/
+│   ├── backups_log.txt
 │
 ├── Gemfile
 ├── Gemfile.lock
