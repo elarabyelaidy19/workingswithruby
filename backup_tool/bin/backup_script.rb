@@ -1,14 +1,15 @@
 require_relative '../lib/Backup' 
-require_relative '../lib/logger' 
+require_relative '../lib/my_logger' 
 require_relative '../lib/compression'
-
+require_relative '../lib/scheduler'
 
 options = { 
-    source: '../compress/test.txt', 
-    destination: '../compress/compressed_test'
+    source: '../backups/test_source', 
+    destination: '../backups/test_destination', 
+    interval: '3s' 
 }
 
-# Backup.versioned_backup(options[:source], options[:destination])
 
-compressed_file = Compression.compress(options[:source], options[:destination])
-Compression.decompress(compressed_file, options[:destination])
+Scheduler.schedule_backup(options)
+
+

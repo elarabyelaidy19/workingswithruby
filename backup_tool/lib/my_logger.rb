@@ -1,4 +1,4 @@
-module Logger 
+module MyLogger 
     LOG_FILE = 'backups/backups_log.txt'.freeze 
 
     def self.log(message) 

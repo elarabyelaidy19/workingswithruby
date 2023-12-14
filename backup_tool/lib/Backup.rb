@@ -1,4 +1,4 @@
-require_relative 'logger'  
+require_relative 'my_logger'
 require 'fileutils'
 
 
@@ -36,6 +36,6 @@ module Backup
     def self.backup_single_file(source_file, backup_file) 
         FileUtils.mkdir_p(File.dirname(backup_file)) unless Dir.exists?(File.dirname(backup_file)) 
         FileUtils.cp(source_file, backup_file) 
-        Logger.log("Copied #{source_file} to #{backup_file}")
+        MyLogger.log("Copied #{source_file} to #{backup_file}")
     end 
 end 

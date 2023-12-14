@@ -1,4 +1,4 @@
-require_relative 'logger'
+require_relative 'my_logger'
 require 'zlib' 
 
 module Compression 
@@ -10,7 +10,7 @@ module Compression
             gz.write(IO.binread(file))
         end 
 
-        Logger.log("Compressed #{file} to: #{compressed_file}") 
+        MyLogger.log("Compressed #{file} to: #{compressed_file}") 
         compressed_file
     end 
 
@@ -22,7 +22,7 @@ module Compression
             File.write(decompressed_file, gz.read)
         end 
 
-        Logger.log("Decompressed #{compressed_file} to: #{decompressed_file}")
+        MyLogger.log("Decompressed #{compressed_file} to: #{decompressed_file}")
         decompressed_file
     end 
 end 
