@@ -1,3 +1,3 @@
 # Workins With Ruby Cores 
 
-The "RubyCorePractice" repository is my practical workspace where I apply Ruby core concepts to real-world scenarios. Through a series of projects, ranging from web applications to command-line tools, I showcase my ability to leverage Ruby's standard library in solving tangible problems. This repository serves as a dynamic portfolio, highlighting my hands-on experience and proficiency in translating theoretical knowledge into practical, functional solutions within the realm of Ruby programming
+The "WorkingsWithRuby" repository is my practical workspace where I apply Ruby core concepts to real-world scenarios. Through a series of projects, ranging from web applications to command-line tools, I showcase my ability to leverage Ruby's standard library in solving tangible problems. 
