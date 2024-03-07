@@ -5,17 +5,14 @@
 - bundler 
 - terminal-table gem 
 
-## How 
-- copy the script make to your machine 
-- make it excutable run `chmod -x script_name.rb` replace the script name with the actual name of your script. 
-- open your shell configuration file `.zshrc` or `.bashrc`  
-- define the function in your `shell configuration file` 
+## How  
+- make it executable run `chmod -x script_name.rb` 
+- define function in your `shell configuration file`  (`.bashrc`, `.zshrc`)
 ```shell 
-pray() { 
+salah() { 
     ruby your_actual_script_path "$@"
 } 
 ```
-- save the file and restart your shell `source /.zshrc` 
-- now you can use the function in your shell just run `function_name` 
+- save the file and restart your shell `source /.zshrc`, just call the function `salah` in your terminal. 
 
 

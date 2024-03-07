@@ -11,8 +11,6 @@ def get_prayer_times(address, time)
     prayer_times_data = JSON.parse(response.body)
 
     prayer_times = prayer_times_data['data']['timings']
-    prayer_times 
-
     { status: 'success', data: prayer_times }
   rescue StandardError => e
     { status: 'error', error: "Error fetching prayer times: #{e.message}" }
@@ -24,7 +22,6 @@ time = Time.now
 method = '5'
 
 result = get_prayer_times(address, time)
- puts result
 if result[:status] == 'success'
   rows = result[:data].map { |prayer, time| [prayer.capitalize, time] }
 
